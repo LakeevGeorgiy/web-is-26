@@ -5,23 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="main.js"></script>
     <title>retro-cars.ru</title>
 </head>
 
 <body lang="ru">
+    
+    <div class="title">
+        <h1 class="title__text">My world of Retro Cars</h1>
+    </div>
+    
+    <div class="main-body">
 
-    <h1 class="text text--title">My world of Retro Cars</h1>
-
-    <nav class="header-menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item "><a class="header__menu-item link" href="index.html">Home page</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="passengers.html">Passangers cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="commerical.html">Commerical cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="motorbikes.html">Motorbikes</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="favourite.html">Favourite cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="about.html">About us</a></li>
-
-        </ul>
-    </nav>
+        <nav class="menu">
+            <div class="menu-list" id="menu-list">
+                <li class="menu-list__item"><a class="menu-list__link" href="index.html">Home page</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="passengers.html">Passangers cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="commerical.html">Commerical cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="favourite.html">Favourite cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="about.html">About us</a></li>
+            </div>
+        </nav>
 </body>
+
+<footer class="footer">
+    <div class="footer__line"></div>
+    <div class="footer-desc">
+        <p class="footer-desc__text">Авто.ру Санкт-Петербург — один из самых 
+            посещаемых автомобильных сайтов в российском интернете</p>
+        <p class="footer-desc__text">Мы предлагаем большой выбор легковых автомобилей, грузового и коммерческого транспорта, мототехники, 
+            спецтехники и многих других видов транспортных средств</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="follow__social-links">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-lic">
+        <p class="footer-lic__text">ООО "Сервис размещения объявлений"</p>
+        <p class="footer-lic__text">Пользовательское соглашение</p>
+        <p class="footer-lic__text">Правила рекомендаций</p>
+    </div>
+    <span class="footer__load-time"></span>
+</footer>
 </html>

@@ -4,65 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="main.js"></script>
     <title>retro-cars.ru</title>
 </head>
+
 <body lang="ru">
-
-    <h1 class="text text--title">My world of Retro Cars</h1>
-
-    <nav class="header-menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item "><a class="header__menu-item link" href="index.html">Home page</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="passengers.html">Passangers cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="commerical.html">Commerical cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="motorbikes.html">Motorbikes</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="favourite.html">Favourite cars</a></li>
-            <li class="header__menu-item"><a class="header__menu-item link" href="about.html">About us</a></li>
-
-        </ul>
-    </nav>
-
-    <article class="about">
-        <img class="about__image" src="Assets/maxresdefault.jpg" alt="garage"/>
-        <div>
-            <h2 class="about__title">Garage</h2>
-            <p class="about__text about--first">We're always up to some wild and exciting custom builds! Sit back, crack open
-                a cold one, and dive into our latest episodes. Whether it's jaw-dropping transformations, behind-the-scenes
-                insights, or showcasing our craftsmanship, you won't want to miss
-                what we've been up to. Enjoy the ride and stay tuned for more
-                amazing builds!
-            </p>
-        </div>
-    </article>
-    <article class="about2">
-        <p class="about__text about2--second">
-            In 2002, Rawlings launched Gas Monkey Garage in Dallas, selling Lincoln Press in 2004. 
-            The shop customizes classic and hot-rod automobiles for customers worldwide. From 2012 to 2020, 
-            the business was the focus of the Discovery Channel series Fast N' Loud. 
-            Rawlings also co-hosts the show Garage Rehab on the Discovery Channel since 2017,
-             which is about overhauling struggling automotive shops, along with co-hosts Russell Holmes and
-              Chris Stephens. He pitched the concept to the network circa 2015. In 2022, Gas Monkey 
-              Garage became title sponsor for Peter Hickman and FHO Racing at the Isle of Man TT Races.
-        </p>
-    </article>
-    <div class="about3">
-        <pre class="about__ascii">
-                    ____________________
-                    //|           |        \
-                //  |           |          \
-            ___________//____|___________|__________()\__________________
-            /__________________|_=_________|_=___________|_________________{}
-            [           ______ |           | .           | ==  ______      { }
-            __[__        /##  ##\|           |             |    /##  ##\    _{# }_
-            {_____)______|##    ##|___________|_____________|___|##    ##|__(______}
-            /  ##__##                              /  ##__##        \
-        </pre>
-        <i class="about__quote">If you don't find a way to make money
-            while you sleep, you will work until you die.</i>
-    </div>
-
-</body>
-<footer>
     
+    <div class="title">
+        <h1 class="title__text">My world of Retro Cars</h1>
+    </div>
+    
+    <div class="main-body">
+
+        <nav class="menu">
+            <div class="menu-list" id="menu-list">
+                <li class="menu-list__item"><a class="menu-list__link" href="index.html">Home page</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="passengers.html">Passangers cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="commerical.html">Commerical cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="favourite.html">Favourite cars</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="about.html">About us</a></li>
+            </div>
+        </nav>
+</body>
+
+<footer class="footer">
+    <div class="footer__line"></div>
+    <div class="footer-desc">
+        <p class="footer-desc__text">Авто.ру Санкт-Петербург — один из самых 
+            посещаемых автомобильных сайтов в российском интернете</p>
+        <p class="footer-desc__text">Мы предлагаем большой выбор легковых автомобилей, грузового и коммерческого транспорта, мототехники, 
+            спецтехники и многих других видов транспортных средств</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="follow__social-links">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-lic">
+        <p class="footer-lic__text">ООО "Сервис размещения объявлений"</p>
+        <p class="footer-lic__text">Пользовательское соглашение</p>
+        <p class="footer-lic__text">Правила рекомендаций</p>
+    </div>
+    <span class="footer__load-time"></span>
 </footer>
 </html>
