@@ -26,6 +26,40 @@
                 <li class="menu-list__item"><a class="menu-list__link" href="about.html">About us</a></li>
             </div>
         </nav>
+
+        <form class="comment-section" id="comment-section">
+            <div class="comment-form">
+                <h2 class="comment-form__title">Leave us a comment</h2>
+                <form>
+                    <textarea class="comment-form__text" id="input-box" placeholder="Add your comment"></textarea>
+                    <div>
+                        <button class="comment-form__button" type="submit" id="submit-button">Submit</button>
+                        <input class="comment-form__upload-button" type="file" id="file-input" name="file-input" />
+                        <label class="comment-form__button" for="file-input">Image</label>
+                        <button class="comment-form__button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </form>
+
+        <div class="comments" id="comments">
+            <div class="comment">
+                <img class="comment__image" src="Assets/b75c87f52229bb5e4acfb58c4babc32e.jpg"/>
+                <h2 class="comment__name">Lakeev Georgiy</h2>
+                <a class="comment__text">This was my first car purchase on this site and 
+                    I am very glad I went to them. I was able to find a Chevrolet Impala 
+                    for relatively little money. I'm very happy</a>
+            </div>
+            <div class="comment">
+                <img class="comment__image" src="Assets/af6ad27303533751e127fc6535fcfdcd.jpg"/>
+                <h2 class="comment__name">Richard Roulings</h2>
+                <a class="comment__text">Nothing prettier than this Ferrie I have ever seen, 
+                    very glad I was able to buy it at auction</a>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 <footer class="footer">
@@ -52,4 +86,5 @@
     </div>
     <span class="footer__load-time"></span>
 </footer>
+<script src="comments.js"></script>
 </html>

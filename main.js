@@ -8,11 +8,24 @@ window.onload = () => {
 
 function setActive() {
     items = document.getElementsByClassName("menu-list__item")
+    let main_page = items[0]
+    let ok = false
+
     for (i = 0; i < items.length; i++) {
         link = items[i].getElementsByClassName("menu-list__link")[0]
+
+        if (link.href.indexOf("index.html") >= 0) {
+            main_page = items[i]
+        }
         
         if (document.location.href.indexOf(link.href) >= 0) {
             items[i].style.background = '#014a70'
+            ok = true
         }
     }
+
+    if (!ok) {
+        main_page.style.background = '#014a70'
+    }
+
 }
