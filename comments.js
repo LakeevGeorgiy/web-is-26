@@ -1,4 +1,5 @@
 let submit_button = document.getElementById("submit-button")
+let clear_button = document.getElementById("clear-button")
 let file_input = document.getElementById("file-input")
 let image = null
 
@@ -99,4 +100,14 @@ submit_button.addEventListener("click", function(event) {
     showComment(comment_value)
 
     image = null
+});
+
+clear_button.addEventListener("click", function(event){
+    event.preventDefault()
+
+    const container = document.getElementById("comments");
+    localStorage.removeItem("comments");
+    for (let i = container.children.length - 1; i >= 2; i--) {
+        container.removeChild(container.children[i]);
+    }
 });
