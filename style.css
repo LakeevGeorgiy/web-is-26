@@ -409,3 +409,33 @@ tr:nth-child(even) {
     color:#0077B6;
     font-size: 20px;
 }
+
+.preloader {
+    grid-column: 1 / 13;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    background: url('/Assets/Preloader_2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+}
+
+.fetch-error {
+    font-size: 18px;
+    text-align: center;
+    color: #fd0000;
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.visible {
+    display:flex;
+}
